@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <header class="header">
+            <nav class="header__navbar">
+                <h1 class="header__logo">
+                    <a href="#" class="header__logo_link">Note-It</a>
+                </h1>
+            </nav>
+            <div class="pagination__bar">
+                <ul class="pagination__list">
+                    <li class="pagination__items">
+                        <a href="#" class="pagination__link">
+                            <span class="material-icons">&#xe2c7;</span>
+                        </a>
+                        <span class="material-icons">&#xe409;</span>
+                    </li>
+                    <li class="pagination__items">
+                        <a href="#" class="pagination__link">
+                            <span class="material-icons">&#xE2C7;</span>
+                        </a>
+                        <span class="material-icons">&#xe409;</span>
+                    </li>
+                    <li class="pagination__items">
+                        <a href="#" class="pagination__link">
+                            <span class="material-icons md-light">&#xE2C7;</span>
+                        </a>
+                        <span class="material-icons">&#xe409;</span>
+                    </li>
+                </ul>
+                <div class="search__bar">
+                    <input type="text" name="searchBar" class="search__input" id="searchBar" placeholder="Search..." />
+                    <label class="search__label" for="searchBar"><span class="material-icons">&#xe8b6;</span></label>
+                </div>
+            </div>
+        </header>
+        <section class="files__container">
+            <ul class="files__list">
+                <li class="files__item">
+                    <span class="material-icons">
+                        &#xef42;
+                        <span class="file__title">HTML</span>
+                    </span>
+                    <span class="last__updated"><strong>Last Updated:</strong>10 March,2022</span>
+                    <span class="file__tools">
+                        <span class="material-icons edit__file">&#xe3c9;</span>
+                        <span class="material-icons delete__file" onclick="deleteNote()">&#xe872;</span>
+                    </span>
+                </li>
+                <li class="files__item">
+                    <span class="material-icons">
+                        &#xef42;
+                        <span class="file__title">Javsscript</span>
+                    </span>
+                    <span class="last__updated"><strong>Last Updated:</strong>11 March,2022</span>
+                    <span class="file__tools">
+                        <span class="material-icons edit__file">&#xe3c9;</span>
+                        <span class="material-icons delete__file" onclick="deleteNote()">&#xe872;</span>
+                    </span>
+                </li>
+                <li class="files__item">
+                    <span class="material-icons">
+                        &#xef42;
+                        <span class="file__title">CSS</span>
+                    </span>
+                    <span class="last__updated"><strong>Last Updated:</strong>09 March,2022</span>
+                    <span class="file__tools">
+                        <span class="material-icons edit__file">&#xe3c9;</span>
+                        <span class="material-icons delete__file" onclick="deleteNote()">&#xe872;</span>
+                    </span>
+                </li>
+            </ul>
+        </section>
+        <div class="create__note">
+            <button class="btn btn__create_note">
+                <span class="material-icons">&#xe147;</span>
+                <span class="btn__create_text">Create Note</span>
+            </button>
+        </div>
+    </main>
+</body>
+</html>
