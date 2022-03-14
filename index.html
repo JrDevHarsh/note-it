@@ -60,30 +60,29 @@
                         <span class="material-icons delete__file" onclick="deleteNote()">&#xe872;</span>
                     </span>
                 </li>
-                <li class="files__item">
-                    <span class="material-icons">
-                        &#xef42;
-                        <span class="file__title">Javsscript</span>
-                    </span>
-                    <span class="last__updated"><strong>Last Updated:</strong>11 March,2022</span>
-                    <span class="file__tools">
-                        <span class="material-icons edit__file">&#xe3c9;</span>
-                        <span class="material-icons delete__file" onclick="deleteNote()">&#xe872;</span>
-                    </span>
-                </li>
-                <li class="files__item">
-                    <span class="material-icons">
-                        &#xef42;
-                        <span class="file__title">CSS</span>
-                    </span>
-                    <span class="last__updated"><strong>Last Updated:</strong>09 March,2022</span>
-                    <span class="file__tools">
-                        <span class="material-icons edit__file">&#xe3c9;</span>
-                        <span class="material-icons delete__file" onclick="deleteNote()">&#xe872;</span>
-                    </span>
-                </li>
             </ul>
         </section>
+        
+        <!-- Modal Content -->
+        <div class="modal" id="myModal">
+            <div class="modal__content">
+                <h2 class="modal__title">
+                    Create New Text
+                </h2>
+                <div class="row">
+                    <label for="inputTitleNote">Title:</label>
+                    <input type="text" name="titleInput" required id="inputTitleNote" class="input__title_note" placeholder="Enter title here..." />
+                </div>
+                <div class="row">
+                    <label for="inputTextNote">Note:</label>
+                <textarea name="inputNote" id="inputTextNote" class="input__text_note"></textarea>
+                </div>
+                <button class="btn btn__submit_note" onclick="saveNote()">Save It</button>
+                <span class="close__modal" onclick="closeModal()" id="closeModal">&times;</span>
+            </div>
+        </div>
+        
+        <!-- create note button -->
         <div class="create__note">
             <button class="btn btn__create_note">
                 <span class="material-icons">&#xe147;</span>
