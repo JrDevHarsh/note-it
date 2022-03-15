@@ -51,6 +51,8 @@ function editedNote(){
             return;
         };
     });
+    inputTitle.value = '';
+    inputText.value = '';
 }
 
 // show modal function
